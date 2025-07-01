@@ -1,0 +1,19 @@
+ <h2>Add User</h2>
+<form method="POST" action="/users/add" onsubmit="return validateForm()">
+    Name: <input type="text" name="name" required><br>
+    Email: <input type="email" name="email" id="email" required><br>
+    Mobile: <input type="text" name="mobile" id="mobile" required><br>
+    <button type="submit">Add User</button>
+</form>
+
+<script>
+function validateForm() {
+    const email = document.getElementById('email').value;
+    const mobile = document.getElementById('mobile').value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const mobileRegex = /^\d{10}$/;
+    if (!emailRegex.test(email)) { alert('Invalid email'); return false; }
+    if (!mobileRegex.test(mobile)) { alert('Invalid mobile number'); return false; }
+    return true;
+}
+</script>

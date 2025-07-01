@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-user-task-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "knex": "^3.1.0",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10",
+    "objection": "^3.1.5",
+    "xlsx": "^0.18.5"
+  }
+}
